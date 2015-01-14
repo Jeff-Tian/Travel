@@ -24,6 +24,7 @@
     <!--[if lt IE 8]>
     <link rel="stylesheet" href="ie_hacks.css"/>
     <![endif]-->
+    <link rel="stylesheet" href="css/travel.css" />
 </head>
 <body>
 <div class="header">
@@ -74,12 +75,13 @@
                 </li>
             </ul>
         </div>
+        <div class="clear-float"></div>
     </div>
     <div class="nav">
         <ul class="horizontal">
             <li class="selected" page-id="Home">
                 <a href="">
-                    <img src="Images/logo.png"/>
+                    <img class="logo" src="images/logo.png"/>
                     首页
                 </a>
             </li>
@@ -121,7 +123,7 @@
     <div class="section">
         <div class="left">
             <ul class="vertical-tab">
-                <li>
+                <li class="selected">
                     <a href="">
                         <span class="icon-office"></span>
                         酒店
@@ -283,9 +285,11 @@
                 </div>
             </div>
         </div>
+        
+        <div class="clear-float"></div>
     </div>
 
-    <div class="section">
+    <div class="section hot-vocation">
         <div class="title">
             <h2>
                 当季热门度假
@@ -429,7 +433,316 @@
                     <p><span class="discount"></span> ￥ 3899 </p>
                 </div>
             </div>
+            <div class="block">
+                <div class="image">
+                    <img src="images/saiban.png" />
+                    <div class="tip">
+                        <h3>杭州-塞班岛</h3>
+                        <p>5天跟团游</p>
+                    </div>
+                </div>
+                <div class"text">
+                    <h3>含往返飞机票（含税）+ 含3晚住宿</h3>
+                    <p>市场价：￥ <span class="strike-through">1095</span> </p>
+                    <p><span class="discount"></span> ￥ 3899 </p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="image">
+                    <img src="images/hongkong.png" />
+                    <div class="tip">
+                        <h3>杭州-香港</h3>
+                        <p>6天跟团游</p>
+                    </div>
+                </div>
+                <div class"text">
+                    <h3>含往返飞机票（含税）+ 含3晚住宿</h3>
+                    <p>市场价：￥ <span class="strike-through">1095</span> </p>
+                    <p><span class="discount"></span> ￥ 3899 </p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="image">
+                    <img src="images/japan.png" />
+                    <div class="tip">
+                        <h3>杭州-日本</h3>
+                        <p>4天跟团游</p>
+                    </div>
+                </div>
+                <div class="text">
+                    <h3>含往返飞机票（含税）+ 含3晚住宿</h3>
+                    <p>市场价：￥ <span class="strike-through">1095</span> </p>
+                    <p><span class="discount"></span> ￥ 3899 </p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="image">
+                    <img src="images/saiban.png" />
+                    <div class="tip">
+                        <h3>杭州-塞班岛</h3>
+                        <p>5天跟团游</p>
+                    </div>
+                </div>
+                <div class"text">
+                    <h3>含往返飞机票（含税）+ 含3晚住宿</h3>
+                    <p>市场价：￥ <span class="strike-through">1095</span> </p>
+                    <p><span class="discount"></span> ￥ 3899 </p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="image">
+                    <img src="images/hongkong.png" />
+                    <div class="tip">
+                        <h3>杭州-香港</h3>
+                        <p>6天跟团游</p>
+                    </div>
+                </div>
+                <div class"text">
+                    <h3>含往返飞机票（含税）+ 含3晚住宿</h3>
+                    <p>市场价：￥ <span class="strike-through">1095</span> </p>
+                    <p><span class="discount"></span> ￥ 3899 </p>
+                </div>
+            </div>
         </div>
+        <div class="clear-float"></div>
+    </div>
+    
+    <div class="section">
+        <ul class="horizontal">
+            <li class="title">
+                <h3>热门团购排行</h3>
+                <select id="hotel-city-select">
+                    <option value="hang-zhou">杭州</option>
+                </select>
+            </li>
+            <li class="selected">
+                <a href="">特惠酒店</a>
+                <ul>
+                    <li>
+                        <div class="block">
+                            <div class="image">
+                                <img src="images/big-bed.png" />
+                                <div class="cute tip">
+                                    <p>5.9折</p>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h3>杭州凯如商务酒店4小时大床房/标准房</h3>
+                                <p>市场价：￥ <span class="strike-through">98</span> </p>
+                                <p><span class="discount"></span> ￥ 58 </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <div class="image">
+                                <img src="images/big-bed.png" />
+                                <div class="cute tip">
+                                    <p>5.9折</p>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h3>杭州凯如商务酒店4小时大床房/标准房</h3>
+                                <p>市场价：￥ <span class="strike-through">98</span> </p>
+                                <p><span class="discount"></span> ￥ 58 </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <div class="image">
+                                <img src="images/big-bed.png" />
+                                <div class="cute tip">
+                                    <p>5.9折</p>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h3>杭州凯如商务酒店4小时大床房/标准房</h3>
+                                <p>市场价：￥ <span class="strike-through">98</span> </p>
+                                <p><span class="discount"></span> ￥ 58 </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <div class="image">
+                                <img src="images/big-bed.png" />
+                                <div class="cute tip">
+                                    <p>5.9折</p>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h3>杭州凯如商务酒店4小时大床房/标准房</h3>
+                                <p>市场价：￥ <span class="strike-through">98</span> </p>
+                                <p><span class="discount"></span> ￥ 58 </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <div class="image">
+                                <img src="images/big-bed.png" />
+                                <div class="cute tip">
+                                    <p>5.9折</p>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h3>杭州凯如商务酒店4小时大床房/标准房</h3>
+                                <p>市场价：￥ <span class="strike-through">98</span> </p>
+                                <p><span class="discount"></span> ￥ 58 </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <div class="image">
+                                <img src="images/big-bed.png" />
+                                <div class="cute tip">
+                                    <p>5.9折</p>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h3>杭州凯如商务酒店4小时大床房/标准房</h3>
+                                <p>市场价：￥ <span class="strike-through">98</span> </p>
+                                <p><span class="discount"></span> ￥ 58 </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <div class="image">
+                                <img src="images/big-bed.png" />
+                                <div class="cute tip">
+                                    <p>5.9折</p>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h3>杭州凯如商务酒店4小时大床房/标准房</h3>
+                                <p>市场价：￥ <span class="strike-through">98</span> </p>
+                                <p><span class="discount"></span> ￥ 58 </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <div class="image">
+                                <img src="images/big-bed.png" />
+                                <div class="cute tip">
+                                    <p>5.9折</p>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h3>杭州凯如商务酒店4小时大床房/标准房</h3>
+                                <p>市场价：￥ <span class="strike-through">98</span> </p>
+                                <p><span class="discount"></span> ￥ 58 </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="">周末周边特价游</a>
+            </li>
+            <li>
+                <a href="">特惠自由行</a>
+            </li>
+            <li class="tail">
+                更多
+            </li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <ul class="horizontal">
+            <li class="title">
+                <h3>精彩旅游攻略</h3>
+            </li>
+            <li>
+                <a href="">当季热门</a>
+            </li>
+            <li class="selected">
+                <a href="">小城故事</a>
+                <ul>
+                    <li class="half-wide">
+                        <a href="">
+                            <img src="images/4.png" />
+                            <div class="tip">四朵金花行走大理寺日记</div>
+                        </a>
+                    </li>
+                    <li class="fourth-wide">
+                        <a href="">
+                            <img src="images/guimi.png" />
+                            <div class="tip">纪念毕业三年，闺蜜之行</div>
+                        </a>
+                    </li>
+                    <li class="fourth-wide">
+                        <a href="">
+                            <img src="images/travel.png" />
+                            <div class="tip">追逐厦门，青春如同一场旅行</div>
+                        </a>
+                    </li>
+                    <li class="fourth-wide">
+                        <a href="">
+                            <img src="images/guimi.png" />
+                            <div class="tip">纪念毕业三年，闺蜜之行</div>
+                        </a>
+                    </li>
+                    <li class="fourth-wide">
+                        <a href="">
+                            <img src="images/travel.png" />
+                            <div class="tip">追逐厦门，青春如同一场旅行</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <ul class="horizontal">
+            <li class="selected">
+                国内热门目的地
+                <ul>
+                    <li>
+                        <span class="title">鼓浪屿：</span>
+                        美食美景皆不负的文艺之地
+                    </li>
+                    <li>
+                        <span class="title">西塘：</span>
+                        弄里的花香，入了谁的梦？
+                    </li>
+                    <li>
+                        <span class="title">双廊：</span>
+                        冬暖夏凉，诗意栖居之地
+                    </li>
+                    <li>
+                        <span class="title">香格里拉：</span>
+                        带有东方神秘色彩的国度
+                    </li>
+                </ul>
+            </li>
+            <li class="selected">
+                海外热门目的地
+                <ul>
+                    <li>
+                        <span class="title">鼓浪屿：</span>
+                        美食美景皆不负的文艺之地
+                    </li>
+                    <li>
+                        <span class="title">西塘：</span>
+                        弄里的花香，入了谁的梦？
+                    </li>
+                    <li>
+                        <span class="title">双廊：</span>
+                        冬暖夏凉，诗意栖居之地
+                    </li>
+                    <li>
+                        <span class="title">香格里拉：</span>
+                        带有东方神秘色彩的国度
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </div>
 <div class="footer">
