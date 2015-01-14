@@ -1,5 +1,7 @@
 body {
     font-family: '黑体';
+    margin-left: 0;
+    margin-right: 0;
 }
 
 body > * {
@@ -20,6 +22,48 @@ body > * {
     clear: both;
 }
 
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.selected a:link,
+.active a:link,
+.highlight a:link {
+    color: #46C100;
+}
+
+.selected a:visited,
+.active a:visited,
+.highlight a:visited {
+    color: #46C100;
+}
+
+a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+a:link > span[class^="icon-"],
+a:link > span[class*=" icon-"] {
+    color: darkgray;
+}
+
+a:hover > span[class^="icon-"],
+a:hover > span[class*=" icon-"],
+a:active > span[class^="icon-"],
+a:active > span[class*=" icon-"] {
+    color: black;
+}
+
 ul.horizontal {
     margin: 0;
     padding: 0;
@@ -30,26 +74,203 @@ ul.horizontal > li {
     display: inline;
 }
 
+.top {
+    font-size: smaller;
+}
+
+.top .right li > a {
+    color: black;
+}
+
+.top .right li:first-child > a {
+    color: #46C100;
+}
+
+.top span.flag {
+    background: url('../images/english.png') no-repeat center center;
+    width: 13px;
+    height: 1em;
+    display: inline-block;
+}
+
+.nav > ul {
+    position: relative;
+}
+
 .nav > ul > li img.logo {
-    height: 50px;
-    width: 200px;
+    border: none;
+}
+
+.nav > ul > li {
+    margin-left: 1em;
+}
+
+.nav > ul > li:first-child {
+    margin-left: 0;
+}
+
+.nav > ul > li.hot {
+    position: relative;
+}
+
+.nav > ul > li.hot:after {
+    position: absolute;
+    content: '';
+    background: url('../images/hot.png') no-repeat center center;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    top: -100%;
+    right: 0;
+}
+
+.nav > ul > li > a {
+    display: inline-block;
+    padding: 10px 5px;
+    font-size: larger;
+}
+
+.nav > ul > li#Sale {
+}
+
+.nav > ul > li#Sale a {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -13px;
+}
+
+.full-screen-width {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 3px;
+}
+
+hr.full-screen-width {
+    border: solid 1px #46C100;
+    background-color: #46C100;
+}
+
+.main {
+    margin-top: 15px;
+}
+
+.main .left {
+    width: 710px;
 }
 
 .vertical-tab {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    border: solid 1px darkgray;
+    font-size: larger;
+    position: relative;
+}
+
+.vertical-tab > li {
+    padding: 15px;
+    background-color: #46C100;
+    box-sizing: border-box;
+    width: 120px;
+    border-top: solid 1px white;
+}
+
+.vertical-tab > li:first-child {
+    border-top: none;
+}
+
+.vertical-tab > li > a:link,
+.vertical-tab > li > a:visited {
+    color: white;
+}
+
+.vertical-tab > li > a:hover span[class^="icon-"],
+.vertical-tab > li > a:hover span[class*=" icon-"],
+.vertical-tab > li > a:active span[class^="icon-"],
+.vertical-tab > li > a:active span[class*=" icon-"] {
+    color: white;
+}
+
+.vertical-tab > li.selected {
+    background-color: white;
+}
+
+.vertical-tab > li.selected a:link,
+.vertical-tab > li.selected a:visited {
+    color: #46C100;
 }
 
 .vertical-tab > li > ul {
     position: absolute;
     display: none;
+    right: 0;
+    top: 0;
+    left: 120px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.vertical-tab > li.selected > ul {
+    display: block;
+    background-color: white;
 }
 
 .horizontal-tab {
-    margin: 0;
-    padding: 0;
+    margin: 0 10px;
+    padding-bottom: 0 !important;
     list-style-type: none;
+    border-bottom: solid 1px darkgray;
+}
+
+.horizontal-tab > li {
+    display: inline-block;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.horizontal-tab > li.selected {
+    border-bottom: solid 2px #46C100;
+}
+
+.horizontal-tab > li > .pane {
+    display: none;
+    position: absolute;
+}
+
+.horizontal-tab > li.selected > .pane {
+    display: block;
+}
+
+.horizontal-tab > li > .pane input,
+.horizontal-tab > li > .pane select {
+    font-size: large;
+}
+
+.horizontal-tab > li > .pane h2 {
+    font-size: large;
+}
+
+.bar {
+    font-size: smaller;
+}
+
+.bar > span {
+    display: inline;
+}
+
+.bar > ul {
+    display: inline;
+}
+
+.bar > ul > li {
+    display: inline-block;
+}
+
+.inline.bar {
+    display: inline;
 }
 
 .main .section . vertical-tab {
@@ -57,8 +278,13 @@ ul.horizontal > li {
 }
 
 .section .title {
-    color: #7ecb50;
-    border-bottom: solid 3px #7ecb50;
+    color: #46C100;
+    border-bottom: solid 3px #46C100;
+    margin-bottom: 1em;
+}
+
+.section .title h2 {
+    margin: 0.3em 0;
 }
 
 .main .hot-vocation .left {
@@ -69,9 +295,90 @@ ul.horizontal > li {
     border: solid 1px darkgray;
     box-sizing: border-box;
     margin-bottom: 10px;
+}
+
+.main .section .box > * {
     padding: 5px;
 }
 
 .main .section .box h3 {
     margin-top: 0;
+    margin-bottom: 0.2em;
+    background-color: #F6FEF2;
+    color: #47C202;
+}
+
+.main .right .section-list {
+    border: solid 1px darkgray;
+    margin-left: 10px;
+    width: 280px;
+    box-sizing: border-box;
+}
+
+.main .right .section-list > div {
+    padding: 10px;
+    border-top: solid 1px darkgray;
+}
+
+.main .right .section-list > div:first-child {
+    border-top: none;
+}
+
+.main .right .section-list > div h2 {
+    font-size: large;
+}
+
+.main .right .section-list > div > p {
+    margin: 0.1em 0;
+}
+
+.hot-line {
+    font-size: x-large;
+    font-weight: bold;
+    text-align: right;
+    color: #44C101;
+}
+
+.hot-line .icon-phone {
+    position: relative;
+    margin-right: 0.5em;
+}
+
+.hot-line .twenty-four-hours {
+    font-size: small;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: bold;
+}
+
+.hot-line .phone-number > span:before,
+.hot-line-2 span:before {
+    content: '-';
+}
+
+.hot-line .phone-number > span:first-child:before,
+.hot-line-2 span:first-child:before {
+    content: '';
+}
+
+.hot-line-2 .country-city:before {
+    content: '(+'!important;
+}
+
+.hot-line-2 .country-city:after {
+    content: ')';
+}
+
+p.hot-line-2 > span {
+    float: right;
+    color: red;
+}
+
+.block {
+    border: solid 1px lightgray;
+    float: left;
+    width: 243px;
+    box-sizing: border-box;
+    margin: 10px;
 }

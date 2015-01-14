@@ -12,3 +12,13 @@
     /* Safari 1.x */
     -khtml-opacity: 0.8;
 }
+
+.travel-button {
+    color: white;
+    background-color: #FF8500;
+    border: none;
+    border-radius: 3px;
+    padding: 0.3em 1.2em;
+    cursor: pointer;
+    font-family: '圆体';
+}
