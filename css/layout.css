@@ -68,10 +68,32 @@ ul.horizontal {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    position: relative;
 }
 
 ul.horizontal > li {
     display: inline;
+}
+
+ul.horizontal > li > ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+ul.horizontal > li.selected > ul {
+    display: block;
+}
+
+ul.horizontal > li > ul > li {
+    border: none;
+    padding: 0;
+}
+
+ul.horizontal > li > ul > li:first-child {
+    border-left: none;
 }
 
 .top {
@@ -273,7 +295,7 @@ hr.full-screen-width {
     display: inline;
 }
 
-.main .section . vertical-tab {
+.main .section .vertical-tab {
     height: 300px;
 }
 
@@ -464,4 +486,184 @@ p.hot-line-2 > span {
 
 .strike-through {
     text-decoration: line-through;
+}
+
+.hot-group-buy {
+    margin-bottom: 1em;
+    height: 600px;
+}
+
+.hot-group-buy ul {
+    border-bottom: solid 2px #7ecb50;
+}
+
+.hot-group-buy ul:after {
+    content: '';
+    display: block;
+    float: none;
+    clear: both;
+}
+
+.hot-group-buy ul > li {
+    border-top: solid 2px #7ecb50;
+    border-right: solid 2px #7ecb50;
+    display: inline-block;
+    float: left;
+    height: 100%;
+}
+
+.hot-group-buy ul > li:first-child {
+    border-left: solid 2px #7ecb50;
+}
+
+.hot-group-buy ul > li > a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 0;
+}
+
+.hot-group-buy ul > li.title {
+    margin: 0;
+    width: 20em;
+    display: inline-block;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    padding-right: 10px;
+}
+
+.hot-group-buy ul > li.title + li {
+    border-left: solid 2px #7ecb50;
+}
+
+.hot-group-buy ul > li.title h2 {
+    display: inline;
+}
+
+.hot-group-buy ul > li.title select {
+    display: inline;
+    float: right;
+}
+
+.hot-group-buy ul > li.tail {
+    float: right;
+    border: none;
+}
+
+.hot-group-buy ul > li.selected > ul {
+    display: block;
+    padding-top: 1em;
+    border-bottom: none;
+}
+
+.hot-group-buy ul > li.selected > ul > li {
+    margin-right: 7px;
+    margin-bottom: 7px;
+}
+
+.hot-group-buy ul > li.selected > ul > li .block {
+    margin: 0!important;
+}
+
+.hot-group-buy .block .image img {
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+.hot-group-buy .block .text {
+    position: relative;
+    
+}
+
+.hot-group-buy .block .highlight {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+
+.hot-group-buy .block .discount:before {
+    content: '';
+    border: none;
+}
+
+.travel-strategy {
+    height: 400px!important;
+    
+}
+
+.travel-strategy ul > li.title {
+    width: 10em!important;
+}
+
+.half-wide {
+    width: 50%;
+    margin: 0!important;
+    box-sizing: border-box;
+}
+
+.half-wide a {
+    box-sizing: border-box;
+    padding: 0!important;
+    display: inline-block;
+    position: relative;
+}
+
+.fourth-wide {
+    width: 25%;
+    margin: 0!important;
+    box-sizing: border-box;
+}
+
+.fourth-wide a {
+    box-sizing: border-box;
+    padding: 0!important;
+    display: inline-block;
+    position: relative;
+}
+
+.half-wide a .tip,
+.fourth-wide a .tip {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    left: 10px;
+}
+
+.hot-scene {
+    height: 100px;
+}
+
+.hot-scene ul:after {
+    content: '';
+    clear: both;
+    float: none;
+    display: block;
+}
+
+.hot-scene ul > li {
+    padding: 2px 0 12px 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+    float: left;
+    position: relative;
+}
+
+.hot-scene ul > li.selected {
+    border-left: solid 3px #7ecb50;
+}
+
+.hot-scene ul > li.selected > ul {
+    padding: 20px 10px 10px 10px;
+    font-size: smaller;
+}
+
+.hot-scene ul > li > ul > li {
+    margin-bottom: 1.5em!important;
+}
+
+.hot-scene ul > li.selected > ul > li .title {
+        border-bottom: none;
 }
