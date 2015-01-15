@@ -382,3 +382,86 @@ p.hot-line-2 > span {
     box-sizing: border-box;
     margin: 10px;
 }
+
+.block .image {
+    height: 161px;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.block .image .tip {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+    color: white;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.block .image .tip h3 {
+    margin: 0.4em 0;
+}
+
+.block .image .tip p {
+    margin: 0.4em 0;
+    color: #e1c240;
+    font-weight: normal;
+}
+
+.block .text {
+    padding: 0 10px;
+}
+
+.block .text h3 {
+    font-size: 90%;
+}
+
+.block .text .lowlight {
+    color: darkgray;
+    font-size: small;
+    margin: 0.4em 0;
+    font-family: Arial;
+}
+
+.block .text .highlight {
+    font-size: large;
+    color: #f74757;
+    margin: 0.4em 0;
+    font-family: Arial;
+}
+
+.block .text .discount {
+    background-color: #f74757;
+    height: 1em;
+    color: white;
+    position: relative;
+}
+
+.block .text .discount:before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    left: 100%;
+    top: 50%;
+    margin-top: -5px;
+    bottom: 0;
+    box-sizing: border-box;
+    border-top: solid 5px transparent;
+    border-right: solid 5px transparent;
+    border-bottom: solid 5px transparent;
+    border-left: solid 5px #f74757;
+    display: block;
+}
+
+.block .text .discount-95:after {
+    content: '9.5折';
+    font-size: small;
+    padding: 0 5px;
+}
+
+.strike-through {
+    text-decoration: line-through;
+}
